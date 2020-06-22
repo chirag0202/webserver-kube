@@ -56,5 +56,7 @@ spec:
            mountPath: /var/www/html
        volumes:
        - name: webtest-vol
+         hostPath:
+         path: /folder1/*
          persistentVolumeClaim:
            claimName: webtest-pv-claim
